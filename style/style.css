@@ -158,6 +158,11 @@ header li:last-child{
         flex-basis: 100%;
     }
 }
+@media (max-width: 500px) {
+    .noticias {
+        padding: 50px 5px;
+    }
+}
 
 /* NOS CONHEÇA */
 .nos {
