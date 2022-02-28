@@ -144,6 +144,22 @@ header li:last-child{
     background-size: cover;
     background-position: center;
 }
+
+/* ANIMAÇÃO */
+.grid {
+    overflow: hidden;
+}
+.grid .img-texto {
+    max-width: 100%;
+    transition: all 0.3s;
+}
+
+.grid li:hover{
+    filter: blur(0.1px);
+    transform: scale(1.1);
+}
+
+
 .noticias .grid li.pequena {
     flex-basis: 40%;    
 }
@@ -164,12 +180,25 @@ header li:last-child{
     }
 }
 
+/* TEXTO NAS IMAGENS */
+.noticias .grid .img-texto {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.noticias .grid .img-texto h3, .noticias .grid li p{
+    margin: 20px;    
+    text-align: left;
+    color: white;
+ }
+
 /* NOS CONHEÇA */
 .nos {
     display: flex;
     flex-direction: column;
     align-items: center; 
     padding: 100px 50px;
+    text-align: center;
 }
 .nos h3 {
     font-size: 2rem;
@@ -180,7 +209,6 @@ header li:last-child{
     max-width: 800px;
     margin-bottom: 35px;
     color: black;
-    text-align: center;
 }
 .nos hr {
     width: 200px;
